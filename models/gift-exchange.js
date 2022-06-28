@@ -10,6 +10,7 @@ class GiftExchange {
 
     let copy = names;
 
+    
     while (names.length > 0) {
       let index = parseInt(Math.random() * names.length);
       let firstName = names[index];
@@ -42,11 +43,11 @@ class GiftExchange {
       names = names.filter((item) => item !== value);
     }
 
-    for (let i = 0; i < words.length; i++) {
+    for (let i = 0; i < items.length; i++) {
       let item;
 
       if (i != items.length - 1) {
-        item = items[i] + " is giving a gift to " + itmes[i + 1];
+        item = items[i] + " is giving a gift to " + items[i + 1];
       } else {
         item = items[i] + " is giving a gift to " + items[0];
       }
